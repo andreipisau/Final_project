@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #text{padding-top: 10px;}
+    </style>
+
+    <link rel="stylesheet" href="{% static 'proiectPg2.css' %}">
+    <title>
+
+    </title>
+</head>
+
+<body background="http://www.amazingwallpaperz.com/wp-content/uploads/Black-and-Yellow-Abstract-Widescreen-Background-Wallpaper.jpg">
+<div>
+   <button> <a href="{% url 'todo_list' %}">Generare parola noua</a></button>
+</div>
+<div id="text" >
+   {{ password }}
+</div>
+
+</body>
+</html>

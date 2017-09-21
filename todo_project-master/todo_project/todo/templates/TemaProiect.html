@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Password Project </title>
+<link rel="stylesheet" href="{% static 'proiect.css' %}">
+
+
+
+</head>
+
+<body background = "http://www.amazingwallpaperz.com/wp-content/uploads/Black-and-Yellow-Abstract-Widescreen-Background-Wallpaper.jpg">
+<form action="{% url 'generate_password' %}" method="post" >
+  {% csrf_token %}
+<div  class="input-group input-group-lg">
+  <span class="input-group-addon" id="sizing-addon1">Numar total de caractere:</span>
+  <input type="text" class="form-control" name="nume1" placeholder="Introduceti nr." aria-describedby="sizing-addon1">
+</div>
+
+<div  class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">Numar total de cifre:</span>
+  <input type="text" class="form-control" name="nume2" placeholder="Introduceti nr." aria-describedby="sizing-addon2">
+</div>
+
+<div class="input-group input-group-sm">
+  <span class="input-group-addon" id="sizing-addon3">Numar caractere speciale:</span>
+  <input type="text" class="form-control" name="nume3" placeholder="Introduceti nr." aria-describedby="sizing-addon3">
+</div>
+
+<div class="btn-group" role="group" aria-label="...">
+  
+  
+  <input type="submit" value="Generare" onclick="window.location.href='file:///C:/Users/Cezar/Desktop/Proiect/TemaProiectPg2.html'" />
+</div>
+</form>
+
+
+</body>
+
+
+</html>
